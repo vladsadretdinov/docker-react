@@ -5,7 +5,8 @@ WORKDIR /app
 COPY package.json .
 RUN npm install
 
-# COPY . .
+COPY . .
+# ненужная команда по сути
 
 CMD ["npm", "run", "start"]
 # CMD ["npm", "run", "test"]
